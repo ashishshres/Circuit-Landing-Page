@@ -24,6 +24,25 @@ body {
   padding: 0.7rem 1rem;
   border-radius: 20px;
   font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid #fff;
+}
+
+.btn--alternate {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn--blue {
+  background-color: var(--primary);
+  color: #fff;
 }
 
 /* Navigation Section */
@@ -56,7 +75,70 @@ body {
   font-weight: 500;
 }
 
-.btn--nav {
+/* Hero Section */
+.hero {
+  margin: 0.5rem;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero__left,
+.hero__right {
+  border-radius: 15px;
+  overflow: hidden;
+  flex-basis: 50%;
+}
+
+.hero__left {
+  padding: 10rem 2rem 2.5rem;
+  background-color: var(--primary);
+}
+
+.hero__title {
+  color: #fff;
+  font-size: 3.7rem;
+  font-weight: 500;
+  line-height: 3.75rem;
+}
+
+.hero__span {
+  color: #b3b8ff;
+}
+
+.hero__btns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hero__video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  gap: 0.5rem;
+}
+
+.hero__card {
+  background-color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.hero__card__title {
+  font-weight: 500;
   color: var(--primary);
-  border: 1px solid var(--primary);
+  line-height: 1.5rem;
+  margin-top: 20px;
+  font-size: 1.3rem;
 }
