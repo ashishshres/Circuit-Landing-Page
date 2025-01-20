@@ -3,9 +3,60 @@
   src: url(fonts/circuit.woff2);
 }
 
+:root {
+  --primary: #2433ff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: circuit;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+/* Navigation Section */
+.navbar {
+  margin: 0.5rem;
+  padding: 1.2rem 2rem;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navbar__links {
+  display: flex;
+  font-size: 0.75rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar__link {
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  background-color: #f0f1ff;
+  color: var(--primary);
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.btn--nav {
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
