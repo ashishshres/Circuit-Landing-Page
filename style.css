@@ -320,3 +320,27 @@ body {
 .services__tags {
   margin: 1rem 0;
 }
+
+.services__cta {
+  margin-top: 0.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 1.75rem 2rem;
+}
+
+.services__cta-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.services__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
