@@ -344,3 +344,56 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* Highlights Section */
+.highlights {
+  margin: 12rem 0.5rem;
+  padding: 10rem 2rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.highlights__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlights__title {
+  font-size: 3.7rem;
+  font-weight: 500;
+  color: var(--primary);
+  line-height: 3.75rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.highlights__cards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0.5rem;
+}
+
+.highlights__card {
+  background-color: #f0f0f0;
+  height: 345px;
+  border-radius: 15px;
+  padding: 1.75rem 2rem;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.hightlights__card-title {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.hightlights__card-desc {
+  font-size: 2rem;
+  font-weight: 500;
+}
