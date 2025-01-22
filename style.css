@@ -16,6 +16,7 @@
 
 body {
   background-color: #f0f0f0;
+  position: relative;
 }
 
 .btn {
@@ -29,6 +30,13 @@ body {
   border: 1px solid var(--primary);
   width: fit-content;
   height: fit-content;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2433ff;
+  color: #fff;
 }
 
 .btn--white {
@@ -37,14 +45,31 @@ body {
   border: 1px solid #fff;
 }
 
+.btn--white:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 .btn--alternate {
   border: 1px solid #fff;
   color: #fff;
 }
 
+.btn--alternate:hover {
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid #fff;
+}
+
 .btn--blue {
   background-color: var(--primary);
   color: #fff;
+}
+
+.btn--blue:hover {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
 }
 
 .tag {
@@ -64,7 +89,13 @@ body {
 
 /* Navigation Section */
 .navbar {
-  margin: 0.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0.5rem;
+}
+
+.navbar__content {
   padding: 1.2rem 2rem;
   background-color: #fff;
   border-radius: 15px;
@@ -72,7 +103,14 @@ body {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  position: relative;
+}
+
+.logo {
+  transition: transform 0.4s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(100deg);
 }
 
 .navbar__links {
@@ -90,11 +128,16 @@ body {
   color: var(--primary);
   border-radius: 20px;
   font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar__link:hover {
+  background-color: #d3d6ff;
 }
 
 /* Hero Section */
 .hero {
-  margin: 0.5rem;
+  margin: 6rem 0.5rem 0.5rem;
 }
 
 .hero__content {
@@ -469,10 +512,23 @@ body {
   border-radius: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer__link:hover {
+  background-color: #c1c4f4;
 }
 
 .footer__img {
   height: 60px;
+}
+
+.footer__img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.footer__img:hover {
+  transform: rotate(100deg);
 }
 
 .footer__socials {
@@ -484,6 +540,13 @@ body {
 
 .footer__socials-img {
   height: 20px;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer__socials-img:hover {
+  opacity: 0.5;
 }
 
 .footer__copyright {
