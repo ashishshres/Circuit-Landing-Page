@@ -124,7 +124,7 @@ body {
 
 .hero__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 0.5rem;
 }
 
@@ -141,4 +141,41 @@ body {
   line-height: 1.5rem;
   margin-top: 20px;
   font-size: 1.3rem;
+}
+
+/* About Section */
+.about {
+  margin: 0.5rem;
+  background-color: var(--primary);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem;
+}
+
+.about__container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5rem 4rem;
+}
+
+.about__img {
+  height: 40px;
+}
+
+.about__title {
+  color: var(--primary);
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.about__btns {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
