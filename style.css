@@ -57,6 +57,11 @@ body {
   color: var(--primary);
 }
 
+.tag--alternate {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 /* Navigation Section */
 .navbar {
   margin: 0.5rem;
@@ -347,7 +352,7 @@ body {
 
 /* Highlights Section */
 .highlights {
-  margin: 12rem 0.5rem;
+  margin: 12rem 0.5rem 0;
   padding: 10rem 2rem;
   text-align: center;
   background-color: #fff;
@@ -396,4 +401,35 @@ body {
 .hightlights__card-desc {
   font-size: 2rem;
   font-weight: 500;
+}
+
+/* Contact Section */
+.contact {
+  margin: 0.5rem;
+  padding: 8rem 2rem;
+  text-align: center;
+  background-color: var(--primary);
+  border-radius: 15px;
+}
+
+.contact__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 3.75rem;
+  margin: 1.75rem 0;
+  text-align: center;
+}
+
+.contact__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
